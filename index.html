@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>My To-Do List</h1>
+        <p class="subtitle">Organize your daily tasks</p>
+
+        <form id="taskForm">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a new task..."
+                autocomplete="off"
+                required
+            >
+            <button type="submit" class="add-btn">Add</button>
+        </form>
+
+        <div class="task-summary">
+            <span id="taskCount">0 tasks remaining</span>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <p id="emptyMessage">No tasks yet. Add your first task!</p>
+
+        <button type="button" id="clearCompleted">
+            Clear Completed
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
